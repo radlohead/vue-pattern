@@ -1,16 +1,28 @@
 <template>
   <article>
     <button-tab>
-      <h1 slot="header">First Header</h1>
-      <div slot="content" class="content">Tab Content #1</div>
+      <template slot="header">
+        <h1>First Header</h1>
+      </template>
+      <template slot="content">
+        <div class="content">Tab Content #1</div>
+      </template>
     </button-tab>
     <button-tab>
-      <h1 slot="header">Second Header</h1>
-      <div slot="content" class="content">Tab Content #2</div>
+      <template slot="header">
+        <h1>Second Header</h1>
+      </template>
+      <template slot="content">
+        <div class="content">Tab Content #2</div>
+      </template>
     </button-tab>
     <button-tab>
-      <h1 slot="header">Third Header</h1>
-      <div slot="content" class="content">Tab Content #3</div>
+      <template slot="header">
+        <h1>Third Header</h1>
+      </template>
+      <template slot="content">
+        <div class="content">Tab Content #3</div>
+      </template>
     </button-tab>
   </article>
 </template>
