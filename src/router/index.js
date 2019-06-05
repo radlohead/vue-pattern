@@ -4,6 +4,8 @@ import App from '@/components/model/App'
 import Slot1 from '@/components/slot1/TabContainer'
 import Slot2 from '@/components/slot2/TabContainer'
 import Slot3 from '@/components/slot3/App'
+import Slot4_1 from '@/components/slot4/Button'
+import Slot4_2 from '@/components/slot4/IconButton'
 
 Vue.use(Router)
 
@@ -28,6 +30,16 @@ export default new Router({
       path: '/slot3',
       name: 'Slot3',
       component: Slot3
+    },
+    {
+      path: '/slot4_1',
+      name: 'Slot4_1',
+      component: Slot4_1
+    },
+    {
+      path: '/slot4_2',
+      name: 'Slot4_2',
+      component: Slot4_2
     }
   ]
 })
