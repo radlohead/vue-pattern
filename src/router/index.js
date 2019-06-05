@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import App from '@/components/model/App'
 import Slot1 from '@/components/slot1/TabContainer'
 import Slot2 from '@/components/slot2/TabContainer'
+import Slot3 from '@/components/slot3/App'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/slot2',
       name: 'Slot2',
       component: Slot2
+    },
+    {
+      path: '/slot3',
+      name: 'Slot3',
+      component: Slot3
     }
   ]
 })
