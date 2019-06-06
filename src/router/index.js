@@ -9,6 +9,7 @@ import Slot4_2 from '@/components/slot4/IconButton'
 import NextTick from '@/components/nextTick/App.vue'
 import Mixin from '@/components/mixin/App.vue'
 import Mixin2 from '@/components/mixin2/App.vue'
+import ComputedAndWatch from '@/components/computedAndWatch/App.vue'
 
 Vue.use(Router)
 
@@ -58,6 +59,11 @@ export default new Router({
       path: '/mixin2',
       name: 'Mixin2',
       component: Mixin2
+    },
+    {
+      path: '/computedAndWatch',
+      name: 'ComputedAndWatch',
+      component: ComputedAndWatch
     }
   ]
 })
