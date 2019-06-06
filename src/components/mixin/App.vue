@@ -1,16 +1,6 @@
 <template>
   <div id="app">
-    <div id="modal">
-      <h3>Let's trigger this here modal!</h3>
-      <button @click="toggleShow">
-        <span v-if="isShowing">Hide child</span>
-        <span v-else>Show child</span>
-      </button>
-      <app-child v-if="isShowing" class="modal">
-        <button @click="toggleShow">Close</button>
-      </app-child>
-    </div>
-    <hr>
+    <app-modal></app-modal>
   </div>
 </template>
 
@@ -22,10 +12,18 @@ const AppChild = {
   </div>`
 };
 
-export default {
-  components: {
-    AppChild
-  },
+const AppModal = `<div id="modal">
+      <h3>Let's trigger this here modal!</h3>
+      <button @click="toggleShow">
+        <span v-if="isShowing">Hide child</span>
+        <span v-else>Show child</span>
+      </button>
+      <app-child v-if="isShowing" class="modal">
+        <button @click="toggleShow">Close</button>
+      </app-child>
+    </div>`;
+
+const toggle = {
   data() {
     return {
       isShowing: false
@@ -35,6 +33,20 @@ export default {
     toggleShow() {
       this.isShowing = !this.isShowing;
     }
+  }
+};
+
+const Modal = {
+  template: AppModal,
+  mixins: [toggle],
+  components: {
+    appChild: AppChild
+  }
+};
+
+export default {
+  components: {
+    appModal: Modal
   }
 };
 </script>
