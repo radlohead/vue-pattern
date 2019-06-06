@@ -7,6 +7,7 @@ import Slot3 from '@/components/slot3/App'
 import Slot4_1 from '@/components/slot4/Button'
 import Slot4_2 from '@/components/slot4/IconButton'
 import NextTick from '@/components/nextTick/App.vue'
+import Mixin from '@/components/mixin/App.vue'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/nextTick',
       name: 'NextTick',
       component: NextTick
+    },
+    {
+      path: '/mixin',
+      name: 'Mixin',
+      component: Mixin
     }
   ]
 })
