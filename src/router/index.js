@@ -6,6 +6,7 @@ import Slot2 from '@/components/slot2/TabContainer'
 import Slot3 from '@/components/slot3/App'
 import Slot4_1 from '@/components/slot4/Button'
 import Slot4_2 from '@/components/slot4/IconButton'
+import NextTick from '@/components/nextTick/App.vue'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/slot4_2',
       name: 'Slot4_2',
       component: Slot4_2
+    },
+    {
+      path: '/nextTick',
+      name: 'NextTick',
+      component: NextTick
     }
   ]
 })
