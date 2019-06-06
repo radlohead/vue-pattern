@@ -12,12 +12,7 @@
 </template>
 
 <script>
-const AppChild = {
-  template: `<div>
-    <h2>Here I am!</h2>
-    <slot />
-  </div>`
-};
+import AppChild from "./AppChild";
 
 const toggle = {
   data() {
