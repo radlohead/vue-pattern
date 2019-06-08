@@ -12,6 +12,7 @@ import Mixin2 from '@/components/mixin2/App.vue'
 import Computed from '@/components/computed/App.vue'
 import Watch from '@/components/watch/App.vue'
 import Trinomial from '@/components/trinomial/App.vue'
+import IfAndShow from '@/components/ifAndShow/App.vue'
 
 Vue.use(Router)
 
@@ -76,6 +77,11 @@ export default new Router({
       path: '/trinomial',
       name: 'Trinomial',
       component: Trinomial
+    },
+    {
+      path: '/ifAndShow',
+      name: 'IfAndShow',
+      component: IfAndShow
     }
   ]
 })
