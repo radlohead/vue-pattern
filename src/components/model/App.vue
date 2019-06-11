@@ -1,5 +1,9 @@
 <template>
-  <check-box v-model="checked"></check-box>
+  <div>
+    <check-box v-model="checked"></check-box>
+    <input type="text" v-model="modelText">
+    modelText: {{ modelText }}
+  </div>
 </template>
 
 <script>
@@ -11,7 +15,8 @@ export default {
   },
   data() {
     return {
-      checked: false
+      checked: false,
+      modelText: ""
     };
   }
 };
