@@ -14,6 +14,7 @@ import Watch from '@/components/watch/App.vue'
 import Trinomial from '@/components/trinomial/App.vue'
 import IfAndShow from '@/components/ifAndShow/App.vue'
 import Click from '@/components/click/App.vue'
+import Destroyed from '@/components/destroyed/App.vue'
 
 Vue.use(Router)
 
@@ -88,6 +89,11 @@ export default new Router({
       path: '/click',
       name: 'Click',
       component: Click
+    },
+    {
+      path: '/destroyed',
+      name: 'Destroyed',
+      component: Destroyed
     }
   ]
 })
