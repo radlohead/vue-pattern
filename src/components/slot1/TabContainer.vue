@@ -14,9 +14,19 @@
 
 <script>
 import ButtonTab from "./ButtonTab";
+
 export default {
   components: {
     ButtonTab
+  },
+  mounted() {
+    this.$destroy();
+  },
+  beforeDestroy() {
+    console.log("beforeDestroy");
+  },
+  destroyed() {
+    console.log("destroyed");
   }
 };
 </script>
